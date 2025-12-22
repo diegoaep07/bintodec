@@ -34,15 +34,6 @@ function decToBin(decCode) {
   return binary;
 }
 
-//Funcion para elevar 2 al exponente de int
-function twoPot(int) {
-  let potTwo = 2;
-  for (let i = 2; i <= int; i++) {
-    potTwo *= 2;
-  }
-  return potTwo;
-}
-
 exports.binToDec = binToDec;
 exports.decToBin = decToBin;
 
