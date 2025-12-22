@@ -29,19 +29,9 @@ function decToBin(decCode) {
     }
   }
 
-  binary = reverse(binary);
+  binary = binary.split("").reverse().join("");
 
   return binary;
-}
-
-function reverse(strings) {
-  let str = strings.split("").reverse();
-  let revstr = "";
-
-  for (let i = 0; i < str.length; i++) {
-    revstr += str[i];
-  }
-  return revstr;
 }
 
 //Funcion para elevar 2 al exponente de int
