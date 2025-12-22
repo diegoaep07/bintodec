@@ -17,15 +17,14 @@ const binToDec = (bincode) => {
 //Funcion para llevar el decimal decCode a Binario
 function decToBin(decCode) {
   let binary = "";
-  let div = decCode;
 
-  for (let i = 0; div > 0; i++) {
-    if (div % 2 === 0) {
+  for (let i = 0; decCode > 0; i++) {
+    if (decCode % 2 === 0) {
       binary += "0";
-      div = div / 2;
+      decCode = decCode / 2;
     } else {
       binary += "1";
-      div = Math.floor(div / 2);
+      decCode = Math.floor(decCode / 2);
     }
   }
 
