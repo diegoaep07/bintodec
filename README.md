@@ -1,23 +1,11 @@
 # Bintodec
 Binary to Decimal and Decimal to Binary Functions
 ### How To Use It:
-After download it, open the directory on the terminal and run `npm test`
-Inmediatly you will see an predefined example, but you can edit it on the `index.js` file.
+After downloading, just run the `index.js` file and you will get a small command line tool to help you convert the numbers.
 
-### binToDec Function
-The `binToDec` function, takes only one string argument like "10110" and returns the equivalent Decimal Number.
-
-#### Example:
-```js
-const btc = require('./bintodec.js')
-console.log(btd.binToDec('10110')) //Returns 22
+### Use it by your own hand.
+If you want to use the functions on your own code, first, you'll have to import the code.
+```js 
+import { binToDec, decToBin } from './bintodec.js'
 ```
-
-### decToBin Function
-The `decToBin` function, takes only one number argument like "22" and returns the equivalent Binary String.
-
-#### Example:
-```js
-const btd = require('./bintodec.js')
-console.log(btd.decToBin(22)) //Returns '10110'
-```
+Then, you'll be able to run the functions rigth inside your program.
