@@ -1,5 +1,5 @@
 //Funcion para llevar el binario bincode a decimal
-const binToDec = (bincode) => {
+export const binToDec = (bincode) => {
   let reversedBinCodeArr = bincode.split("").reverse();
   let dec = 0;
 
@@ -15,7 +15,7 @@ const binToDec = (bincode) => {
 };
 
 //Funcion para llevar el decimal decCode a Binario
-function decToBin(decCode) {
+export const decToBin = (decCode) => {
   let binary = "";
 
   for (let i = 0; decCode > 0; i++) {
@@ -32,7 +32,3 @@ function decToBin(decCode) {
 
   return binary;
 }
-
-exports.binToDec = binToDec;
-exports.decToBin = decToBin;
-
